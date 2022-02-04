@@ -1,6 +1,6 @@
 import React from 'react';
 import imgfltter from '../image/ic4xhwlaljlw.png'
-import imgpcc from '../image/1200px-Adobe_Photoshop_Mobile_icon.svg.png'
+import imgpc from '../image/1200px-Adobe_Photoshop_Mobile_icon.svg.png'
 const Main = () => {
     return (
         <div>
@@ -27,7 +27,7 @@ const Main = () => {
                     </p>
                 </div>
                 <div className='boxcourse'>
-                <img src={imgpcc} className='boxcourseimg'/>
+                <img src={imgpc} className='boxcourseimg'/>
                     <h3 className='boxcoursetitle'>دوره آموزشی فتوشاپ</h3>
                     <h4 className='boxcoursetitle2'>مقدمات فتوشاپ</h4>
                     <p className='boxcoursedescription'>
