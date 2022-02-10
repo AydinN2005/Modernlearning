@@ -2,8 +2,8 @@ import React from 'react';
 import { AiFillCaretDown } from "react-icons/ai";
 const Navifation = () => {
     return (
-        <div>
-                    <nav className='menucontainer'>
+        <div className='menucontainer'>
+        <nav>
         <ul className='menu'>
             <li><a href='#'>دوره های آموزشی<AiFillCaretDown className='arrowdownicon'/></a></li>
             <li><a href='#'>آموزش رایگان<AiFillCaretDown className='arrowdownicon'/></a></li>
