@@ -1,6 +1,7 @@
 body{
     --primary-color-green : #03E021 ;
     --primary-color-gray : #262628 ;
+    --primary-color-gray-dark : #141414;
     --parimary-color-gray-2 : #757575;  
 }
 @font-face {
@@ -9,7 +10,7 @@ body{
 }
 .container{
     font-family: 'Shabnam';
-    background-color:var(--parimary-color-gray-2);
+    background-color:var(--primary-color-gray);
 }
 .topheader{
     background-color: #1F1F1F;
@@ -105,11 +106,12 @@ body{
     border-radius: 5px;
 }
 .menucontainer{
-    background-color: var(--primary-color-gray);
+    background-color: var(--primary-color-gray-dark);
     position: sticky;
     width: 100%;
     height: max-content;
     top: 0;
+    z-index: 1;
 }
 .menu{
     display: flex;
@@ -128,7 +130,7 @@ body{
     padding: 10px;
     text-decoration: none;
     color: var(--primary-color-green);
-    border: 1px solid var(--primary-color-gray);                                                                      
+    border: 1px solid var(--primary-color-gray-dark);                                                                      
     text-align: center;
 }
 .menu li a:hover{
@@ -146,14 +148,12 @@ body{
     width: 100%;
     height: max-content;
     background-color: var(--primary-color-gray);
-    
 }
 .mainheader{
     width: 100%;
     height: 100%;
     background: url('image/WhatsApp Image 2022-01-31 at 06.21.07.jpeg') no-repeat center center/cover;
     background-attachment: fixed;
-    margin-top: 15px;
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
     padding:20px 0 20px;
@@ -182,10 +182,11 @@ body{
 .containercourses{
     width: 100%;
     height: max-content;
-    margin: 20px auto 0;
+    margin: 0px auto 0;
     justify-content: center;
     align-items: center;
     padding:20px 0;
+    background-color: var(--primary-color-gray);
 }
 .boxcoursecontainer{
     display: flex;
@@ -202,12 +203,20 @@ body{
      box-shadow: 5px 5px 5px 5px black ;
      color: white;
      margin: 0 30px;
-} 
+}
+.boxcourse:hover{
+    scale: 1.1;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
 .coursetitle{
-    margin: 10px 0;
+    margin: 0;
     padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
     color: white;
     text-align: center;
+    background-color: var(--primary-color-gray);
 }
 .boxcourseimg{
     width: 120px;
@@ -231,4 +240,71 @@ body{
 .boxcoursedescription{
     line-height: 1.5;
     text-align: center;
+}
+.teacherscontainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color-gray);
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.teacherimg{
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+}
+.teachersbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    background-color: var(--primary-color-green);
+    padding: 0px 10px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.teachersbox:hover{
+    scale: 1.1;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+.teacherimg{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+}
+.teachersname{
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    align-self: flex-end;
+}
+.teachersjob{
+    margin: 0;
+    padding: 10px;
+    align-self: flex-end;
+}
+.spantext{
+    padding: 10px 20px;
+    background-color: var(--primary-color-green);
+    color: black;
+    font-size: 1.4rem;
+    display: block;
+    margin: 50px auto;
+    width: max-content;
+    border-radius: 40px;
+}
+.spantext:hover{
+    scale: 1.1;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
 }
